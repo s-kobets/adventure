@@ -1,0 +1,14 @@
+
+Ч необходимо сверстать страницу в соответствии в макетом и следующими требовани€ми:
+Ч страница т€нетс€ от 320 пикселей по ширине до бесконечности;
+Ч ширина тайлов и отступы фиксированные;
+Ч на разной ширине разное количество столбцов (рассчитать самосто€тельно);
+Ч переход между состо€ни€ми тайлов с эффектом fade in/out; 
+(метод JQuery http://jquery.page2page.ru/index.php5/%D0%9F%D0%BE%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5_%D0%B8_%D0%B8c%D1%87%D0%B5%D0%B7%D0%BD%D0%BE%D0%B2%D0%B5%D0%BD%D0%B8%D0%B5_%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2_%D0%B7%D0%B0_%D1%81%D1%87%D0%B5%D1%82_%D0%BF%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%BE%D1%81%D1%82%D0%B8)
+Ч дл€ картинок использовать lazy load;
+(плагин jquery http://plugins.jquery.com/lazyload/ )
+(http://www.appelsiini.net/projects/lazyload/enabled_background.html)
+Ч адаптировать дл€ ретина-дисплеев (device-pixel-ratio:2);
+Ч видео встраиваетс€ с Youtube.
+
+»сходник: yadi.sk/d/UBaQhP-PeA5V3
