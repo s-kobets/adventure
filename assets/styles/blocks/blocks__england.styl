@@ -1,0 +1,101 @@
+.countries__content__blocks
+	&__item__england, 
+	&__item__switzerland, 
+	&__item__australia, 
+	&__item__germany, 
+	&__item__finland
+		position relative
+		display inline-block
+		float left		
+		margin-top 20px		
+		width 300px
+		height 200px		
+		
+		&__one
+			//display none
+			width 100%
+			height 100%
+			background url('../images/england.jpg') no-repeat center center
+			background-size cover
+							
+			&__overlay
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%
+				z-index 2
+				background rgba(3,21,36,.6)
+				
+				& h1
+					display block
+					margin-top 89px
+					font 32px/17px 'NewBaskervilleC', sans-serif
+					color #fff 
+					text-align center
+		
+		&__first
+			position absolute
+			bottom 20px
+			right 20px
+			z-index 3
+			
+			& .prev
+				display inline-block
+				width 21px
+				height 21px
+				opacity .15
+				margin-right 15px					
+				background url('../images/prev_slide.svg') no-repeat
+				cursor pointer
+				
+				&:hover
+					opacity .3
+				
+			& .next
+				display inline-block
+				width 21px
+				height 21px
+				opacity .15									
+				background url('../images/next_slide.svg') no-repeat
+				cursor pointer
+				
+				&:hover
+					opacity .3
+					
+	&__item__switzerland		
+		&__one
+			background url('../images/switzerland.jpg') no-repeat center center
+			background-size cover
+			
+	&__item__australia		
+		&__one
+			background url('../images/australia.jpg') no-repeat center center
+			background-size cover
+			
+	&__item__germany		
+			&__one
+				background url('../images/germany.jpg') no-repeat center center
+				background-size cover
+				
+		&__item__finland		
+			&__one
+				background url('../images/finland.jpg') no-repeat center center
+				background-size cover
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-moz-device-pixel-ratio: 2), 
+only screen and (-o-min-device-pixel-ratio: 2/1), 
+only screen and (min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 192dpi), 
+only screen and (min-resolution: 2dppx)
+	.countries__content__blocks__item__england
+		background url('../images/england@2x.jpg') no-repeat center center
+	.countries__content__blocks__item__switzerland
+		background url('../images/switzerland@2x.jpg') no-repeat center center
+	.countries__content__blocks__item__australia
+		background url('../images/australia@2x.jpg') no-repeat center center
+	.countries__content__blocks__item__germany
+		background url('../images/germany@2x.jpg') no-repeat center center
+	.countries__content__blocks__item__finland
+		background url('../images/finland@2x.jpg') no-repeat center center

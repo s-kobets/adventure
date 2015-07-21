@@ -1,19 +1,42 @@
 .countries
 	background #fff
 	
-	&__contant
+	&__content
 		width 87.5%
-		margin 0 auto
-	
+		margin 60px auto 80px
+		
+		@media (min-width: 1260px)
+				width 1260px
+					
+		@media (max-width: 320px)
+			margin 20px auto 0
+			width 300px	
+				
 		&__filter
-			margin-top 60px
 			
+			@media (max-width: 320px)
+				text-align center
+						
 			& li
 				float left
 				text-transform uppercase
-				font 12px/16px 'PTSansRegular', sans-serif
+				font 12px/16px 'PTSansBold', sans-serif
 				letter-spacing .05em				
 				color #9fa2a8
+				
+				&:after
+						content ''
+						display block
+						margin-top 3px
+						height 2px
+						background transparent	
+						
+				@media (max-width: 320px)
+					display inline-block
+					float none
+					
+					
+
 				
 				&.activ
 					font 12px/16px 'PTSansBold', sans-serif	

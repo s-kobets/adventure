@@ -1,10 +1,27 @@
 .countries
-	.countries__contant
-		ul.countries__contant__filter.clearfix
+	.countries__content
+		ul.countries__content__filter.clearfix
 			li.activ Все страны
 			li культура
 			li экстрим
 			li атмосфера
 			li Люди
 
-		include countries_blocks
+		.countries__content__blocks.clearfix
+
+			.countries__content__blocks__item.clearfix
+				include blocks__item__cuba
+				include blocks__item__russia
+				include blocks__item__england
+				include blocks__item__norway
+				include blocks__item__switzerland
+				include blocks__item__china
+				include blocks__item__australia
+				include blocks__item__india
+
+			.countries__content__blocks__item_right.clearfix
+				include blocks__item__latine_america
+				include blocks__item__germany
+				include blocks__item__japan
+				include blocks__item__finland
+				include blocks__item__new-zealand

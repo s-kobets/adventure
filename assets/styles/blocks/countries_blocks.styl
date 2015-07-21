@@ -3,150 +3,286 @@
 .ak 
 	display block!important
 	
-.countries__contant__blocks
+.countries__content__blocks	
 	margin-top 20px	
+	text-align center
 	
-	&__item__cuba
-		position relative
+	&__item
 		display inline-block
-		width 300px
-		height 200px
+		float left
+		width 620px		
 		
-		&__one
-			//display none
-			width 100%
+		@media (max-width: 639px)
+			@media (min-width: 320px)
+				width 300px
+				float none
+		
+		@media (max-width: 1259px)
+			@media (min-width: 640px)			
+				float none		
+
+		&-one
+			float left
+			width 300px			
+						
+		&__cuba
+			position relative
+			display inline-block
+			float left
+			width 300px
 			height 200px
-			background url('../images/cuba.jpg') no-repeat center center
-			background-size cover
-							
-			&__overlay
-				position absolute
-				top 0
-				left 0
+			margin-left 0
+			
+			&__one
+				//display none
 				width 100%
-				height 100%
-				z-index 2
-				background rgba(3,21,36,.6)
-				
-				& h1
-					display block
-					margin-top 89px
-					font 32px/17px 'NewBaskervilleC', sans-serif
-					color #fff 
-					text-align center
-		
-		&__two
-			//display none
-			position absolute
-			top 0
-			left 0
-			width 100%
-			height 100%
-			background #313336
+				height 200px
+				background url('../images/cuba.jpg') no-repeat center center
+				background-size cover
+								
+				&__overlay
+					position absolute
+					top 0
+					left 0
+					width 100%
+					height 100%
+					z-index 2
+					background rgba(3,21,36,.6)
+					
+					& h1
+						display block
+						margin-top 89px
+						font 32px/17px 'NewBaskervilleC', sans-serif
+						color #fff 
+						text-align center
 			
-			&__text
-				padding-top 40px
-				padding-left 17px
-				
-				& h3
-					width 260px
-					font 14px/22px 'PTSansRegular', sans-serif
-					color #abaeb3
-			
-				& h2
-					margin-top 30.5px
-					font 24px/17px 'PTSansRegular', sans-serif
-					color #fff
-				
-		&__three
-			//display none
-			width 100%
-			height 100%	
-			background url('../images/cuba_three.jpg') no-repeat center center
-			background-size cover	
-			
-			&__zoom
+			&__two
 				//display none
 				position absolute
-				top 50%
-				left 50%
-				margin-top -21px
-				margin-left -21px
-				width 42px
-				height 42px
-				background url('../images/icon_zoom.svg') no-repeat
-				z-index 3								
-			
-			&__overlay
-				position absolute
 				top 0
 				left 0
 				width 100%
 				height 100%
-				z-index 2
-				background rgba(3,21,42,.2)				
-
-				& h2
-					margin-left 17px
-					margin-top 156.5px
-					font 24px/17px 'PTSansRegular', sans-serif
-					color #fff
-			
-		&__four	
-			//display none
-			width 100%
-			height 100%		
-			background url('../images/cuba_four.jpg') no-repeat center 28%
-			background-size cover
-			
-			&__play
-				//display none				
-				position absolute
-				top 50%
-				left 50%
-				margin-top -21px
-				margin-left -21px
-				width 42px
-				height 42px
-				background url('../images/icon_play.svg') no-repeat
-				z-index 3
+				background #313336
+				
+				&__text
+					padding-top 40px
+					padding-left 17px
 					
-			&__overlay
+					& h3
+						width 260px
+						font 14px/22px 'PTSansRegular', sans-serif
+						color #abaeb3
+				
+					& h2
+						margin-top 30.5px
+						font 24px/17px 'PTSansRegular', sans-serif
+						color #fff
+					
+			&__three
+				//display none
 				position absolute
 				top 0
 				left 0
 				width 100%
-				height 100%
-				z-index 2
-				background rgba(7,26,42,.2)			
+				height 100%	
+				background url('../images/cuba_three.jpg') no-repeat center center
+				background-size cover	
 				
-				& h2
-					margin-left 17px
-					margin-top 156.5px
-					font 24px/17px 'PTSansRegular', sans-serif
-					color #fff
+				&__overlay
+					position absolute
+					top 0
+					left 0
+					width 100%
+					height 100%
+					z-index 2
+					background rgba(3,21,42,.2) 				
+					
+					&:hover	
+						background rgba(3,21,42,.2) url('../images/icon_zoom.svg') no-repeat center center	
+						background-size 42px 42px
+						cursor pointer
+						
+					& h2
+						margin-left 17px
+						margin-top 156.5px
+						font 24px/17px 'PTSansRegular', sans-serif
+						color #fff
+				
+			&__four	
+				//display none
+				position absolute
+				top 0
+				left 0
+				width 100%
+				height 100%		
+				background url('../images/cuba_four.jpg') no-repeat center 28%
+				background-size cover		
+						
+				&__overlay
+					position absolute
+					top 0
+					left 0
+					width 100%
+					height 100%
+					z-index 2
+					background rgba(7,26,42,.2)	
+					
+					&:hover	
+						background rgba(7,26,42,.2) url('../images/icon_play.svg') no-repeat center center	
+						background-size 42px 42px
+						cursor pointer				
+					
+					& h2
+						margin-left 17px
+						margin-top 156.5px
+						font 24px/17px 'PTSansRegular', sans-serif
+						color #fff
 
-		&__first
-			position absolute
-			bottom 20px
-			right 20px
-			z-index 3
-			
-			& a
-				display inline-block
-				width 21px
-				height 21px
-				opacity .15
+			&__first
+				position absolute
+				bottom 20px
+				right 20px
+				z-index 3
 				
-				&:hover
-					opacity .3
-				
-				&.left										
+				& .left
+					display inline-block
+					width 21px
+					height 21px
+					opacity .15
 					margin-right 15px					
-					background url('../images/prev_slide.svg') no-repeat		
-				
-				&.right							
+					background url('../images/prev_slide.svg') no-repeat
+					cursor pointer
+					
+					&:hover
+						opacity .3
+					
+				& .right
+					display inline-block
+					width 21px
+					height 21px
+					opacity .15									
 					background url('../images/next_slide.svg') no-repeat
-		
+					cursor pointer
+					
+					&:hover
+						opacity .3		
+
+//Модальное окно image
+.popup_overlay
+	display none
+	position fixed
+	left 0
+	top 0
+	width 100%
+	height 100%
+	background: rgba(20,26,31,.9)
+	text-align: center	
+	z-index 10
 	
+	@media (max-width: 509px)
+		display none
+		background: transparent
+		
+	&:after
+		content ''
+		display inline-block
+		height 100%
+		width 0
+		vertical-align middle		
+  						
+	& .popup
+		position relative
+		display inline-block			
+		width 640px
+		height 480px		
+		background url('../images/cuba_three.jpg') no-repeat center center
+		background-size cover
+		vertical-align: middle
+		z-index 11		
+
+		@media (max-width: 710px)
+			@media (min-width: 510px)
+				width 440px
+				height 248px
+				
+		@media (max-width: 509px)
+			display none
+
+		& a
+			position absolute
+			display block
+			top -35px
+			right -35px
+			width 30px
+			height 30px
+			background url('../images/icon_close.svg') no-repeat center center
+			opacity .2
+			z-index 11
+			
+			&:hover
+				opacity .5
+
+//Модальное окно video
+.video_overlay
+	display none
+	position fixed
+	left 0
+	top 0
+	width 100%
+	height 100%
+	background: rgba(20,26,31,.9)
+	text-align: center	
+	z-index 10	
+	
+	@media (max-width: 799px)
+		display none
+		background: transparent
+		
+	&:after
+		content ''
+		display inline-block
+		height 100%
+		width 0
+		vertical-align middle		
+  						
+	& .popup
+		position relative
+		display inline-block			
+		width 740px
+		height 480px			
+		background-size cover
+		vertical-align: middle
+		z-index 11	
+		
+		@media (max-width: 799px)			
+			display none
+		
+		& a
+			position absolute
+			display block
+			top -35px
+			right -35px
+			width 30px
+			height 30px
+			background url('../images/icon_close.svg') no-repeat center center
+			opacity .2
+			z-index 11
+			
+			&:hover
+				opacity .5			
+						
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (min-moz-device-pixel-ratio: 2), 
+only screen and (-o-min-device-pixel-ratio: 2/1), 
+only screen and (min-device-pixel-ratio: 2), 
+only screen and (min-resolution: 192dpi), 
+only screen and (min-resolution: 2dppx)
+	.countries__content__blocks__item__cuba__one
+		background url('../images/cuba@2x.jpg') no-repeat center center
+	.countries__content__blocks__item__cuba__three	
+		background url('../images/cuba_three@2x.jpg') no-repeat center center
+	.countries__content__blocks__item__cuba__four	
+		background url('../images/cuba_four@2x.jpg') no-repeat center 28%
+		
 		

@@ -4,5 +4,15 @@ html(lang='ru')
 	body
 		include ../blocks/header
 		block countries
+		//Модальное окно image
+		.popup_overlay
+			.popup
+				a(href="#" class="popup_close")
+		//Модальное окно video
+		.video_overlay
+			.popup
+				iframe(width="740" height="480" src="https://www.youtube.com/embed/iP8D-InacB8" frameborder="0" allowfullscreen)
+				a(href="#" class="popup_close")
+		include ../blocks/footer
 		script(src='js/all.min.js')
 		
