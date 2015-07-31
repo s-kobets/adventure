@@ -1,10 +1,12 @@
 .countries__content__blocks
 	&__item__russia, 
-	&__item__norway, 
+	&__item__norway,
+	&__item__norway_culture,
 	&__item__china, 
 	&__item__india, 
 	&__item__japan, 
-	&__item__new-zealand
+	&__item__new-zealand,
+	&__item__new-zealand_culture
 		position relative
 		display inline-block
 		float left
@@ -15,8 +17,7 @@
 		@media (max-width: 639px)
 			@media (min-width: 320px)
 				margin-left 0
-				margin-top 20px			
-				
+				margin-top 20px					
 		
 		&__one
 			//display none
@@ -39,8 +40,8 @@
 					margin-top 89px
 					font 32px/17px 'NewBaskervilleC', sans-serif
 					color #fff 
-					text-align center
-		
+					text-align center				
+
 		&__first
 			position absolute
 			bottom 20px
@@ -68,13 +69,34 @@
 				cursor pointer
 				
 				&:hover
-					opacity .3
-					
+					opacity .3		
+
 	&__item__norway
-		margin-top 20px
+		display none
+		margin-top 20px		
+		
 		&__one
-			background url('../images/norway.jpg') no-repeat center center
+			//background url('../images/norway.jpg') no-repeat center center
 			background-size cover
+			
+	&__item__norway_culture
+		margin-top 20px	
+			
+		&__one
+			margin-top 20px
+			margin-left 30px
+			width 240px
+			height 160px
+			
+			&__overlay
+				top 20px
+				left 30px
+				width 240px
+				height 160px
+				background rgba(191,194,198,.82)
+				
+				& h1
+					margin-top 69px	
 			
 	&__item__china
 		margin-top 20px
@@ -95,10 +117,31 @@
 			background-size cover
 			
 	&__item__new-zealand
+		display none
 		margin-top 20px
+		
 		&__one
 			background url('../images/new-zealand.jpg') no-repeat center center
 			background-size cover
+			
+	&__item__new-zealand_culture
+		margin-top 20px	
+			
+		&__one
+			margin-top 20px
+			margin-left 30px
+			width 240px
+			height 160px
+			
+			&__overlay
+				top 20px
+				left 30px
+				width 240px
+				height 160px
+				background rgba(191,194,198,.82)
+				
+				& h1
+					margin-top 69px			
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-moz-device-pixel-ratio: 2), 

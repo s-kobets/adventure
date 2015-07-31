@@ -1,4 +1,4 @@
-p = $('.popup_overlay')
+п»їp = $('.popup_overlay')
 $('#popup_toggle').click(function() {
     p.css('display', 'block')
 });
@@ -12,7 +12,7 @@ $('.popup_close').click(function() {
     p.css('display', 'none')
 });
 
-//модальное окно для видео
+//РјРѕРґР°Р»СЊРЅРѕРµ РѕРєРЅРѕ РґР»СЏ РІРёРґРµРѕ
 h = $('.video_overlay')
 $('#video_toggle').click(function() {
     h.css('display', 'block')

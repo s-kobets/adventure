@@ -175,9 +175,12 @@ table {
 }
 .countries__content__blocks__item__england,
 .countries__content__blocks__item__switzerland,
+.countries__content__blocks__item__switzerland_culture,
 .countries__content__blocks__item__australia,
+.countries__content__blocks__item__australia_culture,
 .countries__content__blocks__item__germany,
-.countries__content__blocks__item__finland {
+.countries__content__blocks__item__finland,
+.countries__content__blocks__item__finland_culture {
   position: relative;
   display: inline-block;
   float: left;
@@ -187,9 +190,12 @@ table {
 }
 .countries__content__blocks__item__england__one,
 .countries__content__blocks__item__switzerland__one,
+.countries__content__blocks__item__switzerland_culture__one,
 .countries__content__blocks__item__australia__one,
+.countries__content__blocks__item__australia_culture__one,
 .countries__content__blocks__item__germany__one,
-.countries__content__blocks__item__finland__one {
+.countries__content__blocks__item__finland__one,
+.countries__content__blocks__item__finland_culture__one {
   width: 100%;
   height: 100%;
   background: url("../images/england.jpg") no-repeat center center;
@@ -197,9 +203,12 @@ table {
 }
 .countries__content__blocks__item__england__one__overlay,
 .countries__content__blocks__item__switzerland__one__overlay,
+.countries__content__blocks__item__switzerland_culture__one__overlay,
 .countries__content__blocks__item__australia__one__overlay,
+.countries__content__blocks__item__australia_culture__one__overlay,
 .countries__content__blocks__item__germany__one__overlay,
-.countries__content__blocks__item__finland__one__overlay {
+.countries__content__blocks__item__finland__one__overlay,
+.countries__content__blocks__item__finland_culture__one__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -210,9 +219,12 @@ table {
 }
 .countries__content__blocks__item__england__one__overlay h1,
 .countries__content__blocks__item__switzerland__one__overlay h1,
+.countries__content__blocks__item__switzerland_culture__one__overlay h1,
 .countries__content__blocks__item__australia__one__overlay h1,
+.countries__content__blocks__item__australia_culture__one__overlay h1,
 .countries__content__blocks__item__germany__one__overlay h1,
-.countries__content__blocks__item__finland__one__overlay h1 {
+.countries__content__blocks__item__finland__one__overlay h1,
+.countries__content__blocks__item__finland_culture__one__overlay h1 {
   display: block;
   margin-top: 89px;
   font: 32px/17px 'NewBaskervilleC', sans-serif;
@@ -221,9 +233,12 @@ table {
 }
 .countries__content__blocks__item__england__first,
 .countries__content__blocks__item__switzerland__first,
+.countries__content__blocks__item__switzerland_culture__first,
 .countries__content__blocks__item__australia__first,
+.countries__content__blocks__item__australia_culture__first,
 .countries__content__blocks__item__germany__first,
-.countries__content__blocks__item__finland__first {
+.countries__content__blocks__item__finland__first,
+.countries__content__blocks__item__finland_culture__first {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -231,9 +246,12 @@ table {
 }
 .countries__content__blocks__item__england__first .prev,
 .countries__content__blocks__item__switzerland__first .prev,
+.countries__content__blocks__item__switzerland_culture__first .prev,
 .countries__content__blocks__item__australia__first .prev,
+.countries__content__blocks__item__australia_culture__first .prev,
 .countries__content__blocks__item__germany__first .prev,
-.countries__content__blocks__item__finland__first .prev {
+.countries__content__blocks__item__finland__first .prev,
+.countries__content__blocks__item__finland_culture__first .prev {
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -244,16 +262,22 @@ table {
 }
 .countries__content__blocks__item__england__first .prev:hover,
 .countries__content__blocks__item__switzerland__first .prev:hover,
+.countries__content__blocks__item__switzerland_culture__first .prev:hover,
 .countries__content__blocks__item__australia__first .prev:hover,
+.countries__content__blocks__item__australia_culture__first .prev:hover,
 .countries__content__blocks__item__germany__first .prev:hover,
-.countries__content__blocks__item__finland__first .prev:hover {
+.countries__content__blocks__item__finland__first .prev:hover,
+.countries__content__blocks__item__finland_culture__first .prev:hover {
   opacity: 0.3;
 }
 .countries__content__blocks__item__england__first .next,
 .countries__content__blocks__item__switzerland__first .next,
+.countries__content__blocks__item__switzerland_culture__first .next,
 .countries__content__blocks__item__australia__first .next,
+.countries__content__blocks__item__australia_culture__first .next,
 .countries__content__blocks__item__germany__first .next,
-.countries__content__blocks__item__finland__first .next {
+.countries__content__blocks__item__finland__first .next,
+.countries__content__blocks__item__finland_culture__first .next {
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -263,26 +287,86 @@ table {
 }
 .countries__content__blocks__item__england__first .next:hover,
 .countries__content__blocks__item__switzerland__first .next:hover,
+.countries__content__blocks__item__switzerland_culture__first .next:hover,
 .countries__content__blocks__item__australia__first .next:hover,
+.countries__content__blocks__item__australia_culture__first .next:hover,
 .countries__content__blocks__item__germany__first .next:hover,
-.countries__content__blocks__item__finland__first .next:hover {
+.countries__content__blocks__item__finland__first .next:hover,
+.countries__content__blocks__item__finland_culture__first .next:hover {
   opacity: 0.3;
+}
+.countries__content__blocks__item__switzerland {
+  display: none;
 }
 .countries__content__blocks__item__switzerland__one {
   background: url("../images/switzerland.jpg") no-repeat center center;
   background-size: cover;
 }
+.countries__content__blocks__item__switzerland_culture__one {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 240px;
+  height: 160px;
+}
+.countries__content__blocks__item__switzerland_culture__one__overlay {
+  top: 20px;
+  left: 30px;
+  width: 240px;
+  height: 160px;
+  background: rgba(191,194,198,0.82);
+}
+.countries__content__blocks__item__switzerland_culture__one__overlay h1 {
+  margin-top: 69px;
+}
+.countries__content__blocks__item__australia {
+  display: none;
+}
 .countries__content__blocks__item__australia__one {
   background: url("../images/australia.jpg") no-repeat center center;
   background-size: cover;
+}
+.countries__content__blocks__item__australia_culture__one {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 240px;
+  height: 160px;
+}
+.countries__content__blocks__item__australia_culture__one__overlay {
+  top: 20px;
+  left: 30px;
+  width: 240px;
+  height: 160px;
+  background: rgba(191,194,198,0.82);
+}
+.countries__content__blocks__item__australia_culture__one__overlay h1 {
+  margin-top: 69px;
 }
 .countries__content__blocks__item__germany__one {
   background: url("../images/germany.jpg") no-repeat center center;
   background-size: cover;
 }
+.countries__content__blocks__item__finland {
+  display: none;
+}
 .countries__content__blocks__item__finland__one {
   background: url("../images/finland.jpg") no-repeat center center;
   background-size: cover;
+}
+.countries__content__blocks__item__finland_culture__one {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 240px;
+  height: 160px;
+}
+.countries__content__blocks__item__finland_culture__one__overlay {
+  top: 20px;
+  left: 30px;
+  width: 240px;
+  height: 160px;
+  background: rgba(191,194,198,0.82);
+}
+.countries__content__blocks__item__finland_culture__one__overlay h1 {
+  margin-top: 69px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .countries__content__blocks__item__england {
@@ -382,10 +466,12 @@ table {
 }
 .countries__content__blocks__item__russia,
 .countries__content__blocks__item__norway,
+.countries__content__blocks__item__norway_culture,
 .countries__content__blocks__item__china,
 .countries__content__blocks__item__india,
 .countries__content__blocks__item__japan,
-.countries__content__blocks__item__new-zealand {
+.countries__content__blocks__item__new-zealand,
+.countries__content__blocks__item__new-zealand_culture {
   position: relative;
   display: inline-block;
   float: left;
@@ -395,10 +481,12 @@ table {
 }
 .countries__content__blocks__item__russia__one,
 .countries__content__blocks__item__norway__one,
+.countries__content__blocks__item__norway_culture__one,
 .countries__content__blocks__item__china__one,
 .countries__content__blocks__item__india__one,
 .countries__content__blocks__item__japan__one,
-.countries__content__blocks__item__new-zealand__one {
+.countries__content__blocks__item__new-zealand__one,
+.countries__content__blocks__item__new-zealand_culture__one {
   width: 100%;
   height: 100%;
   background: url("../images/russia.jpg") no-repeat center center;
@@ -406,10 +494,12 @@ table {
 }
 .countries__content__blocks__item__russia__one__overlay,
 .countries__content__blocks__item__norway__one__overlay,
+.countries__content__blocks__item__norway_culture__one__overlay,
 .countries__content__blocks__item__china__one__overlay,
 .countries__content__blocks__item__india__one__overlay,
 .countries__content__blocks__item__japan__one__overlay,
-.countries__content__blocks__item__new-zealand__one__overlay {
+.countries__content__blocks__item__new-zealand__one__overlay,
+.countries__content__blocks__item__new-zealand_culture__one__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -420,10 +510,12 @@ table {
 }
 .countries__content__blocks__item__russia__one__overlay h1,
 .countries__content__blocks__item__norway__one__overlay h1,
+.countries__content__blocks__item__norway_culture__one__overlay h1,
 .countries__content__blocks__item__china__one__overlay h1,
 .countries__content__blocks__item__india__one__overlay h1,
 .countries__content__blocks__item__japan__one__overlay h1,
-.countries__content__blocks__item__new-zealand__one__overlay h1 {
+.countries__content__blocks__item__new-zealand__one__overlay h1,
+.countries__content__blocks__item__new-zealand_culture__one__overlay h1 {
   display: block;
   margin-top: 89px;
   font: 32px/17px 'NewBaskervilleC', sans-serif;
@@ -432,10 +524,12 @@ table {
 }
 .countries__content__blocks__item__russia__first,
 .countries__content__blocks__item__norway__first,
+.countries__content__blocks__item__norway_culture__first,
 .countries__content__blocks__item__china__first,
 .countries__content__blocks__item__india__first,
 .countries__content__blocks__item__japan__first,
-.countries__content__blocks__item__new-zealand__first {
+.countries__content__blocks__item__new-zealand__first,
+.countries__content__blocks__item__new-zealand_culture__first {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -443,10 +537,12 @@ table {
 }
 .countries__content__blocks__item__russia__first .prev,
 .countries__content__blocks__item__norway__first .prev,
+.countries__content__blocks__item__norway_culture__first .prev,
 .countries__content__blocks__item__china__first .prev,
 .countries__content__blocks__item__india__first .prev,
 .countries__content__blocks__item__japan__first .prev,
-.countries__content__blocks__item__new-zealand__first .prev {
+.countries__content__blocks__item__new-zealand__first .prev,
+.countries__content__blocks__item__new-zealand_culture__first .prev {
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -457,18 +553,22 @@ table {
 }
 .countries__content__blocks__item__russia__first .prev:hover,
 .countries__content__blocks__item__norway__first .prev:hover,
+.countries__content__blocks__item__norway_culture__first .prev:hover,
 .countries__content__blocks__item__china__first .prev:hover,
 .countries__content__blocks__item__india__first .prev:hover,
 .countries__content__blocks__item__japan__first .prev:hover,
-.countries__content__blocks__item__new-zealand__first .prev:hover {
+.countries__content__blocks__item__new-zealand__first .prev:hover,
+.countries__content__blocks__item__new-zealand_culture__first .prev:hover {
   opacity: 0.3;
 }
 .countries__content__blocks__item__russia__first .next,
 .countries__content__blocks__item__norway__first .next,
+.countries__content__blocks__item__norway_culture__first .next,
 .countries__content__blocks__item__china__first .next,
 .countries__content__blocks__item__india__first .next,
 .countries__content__blocks__item__japan__first .next,
-.countries__content__blocks__item__new-zealand__first .next {
+.countries__content__blocks__item__new-zealand__first .next,
+.countries__content__blocks__item__new-zealand_culture__first .next {
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -478,29 +578,52 @@ table {
 }
 .countries__content__blocks__item__russia__first .next:hover,
 .countries__content__blocks__item__norway__first .next:hover,
+.countries__content__blocks__item__norway_culture__first .next:hover,
 .countries__content__blocks__item__china__first .next:hover,
 .countries__content__blocks__item__india__first .next:hover,
 .countries__content__blocks__item__japan__first .next:hover,
-.countries__content__blocks__item__new-zealand__first .next:hover {
+.countries__content__blocks__item__new-zealand__first .next:hover,
+.countries__content__blocks__item__new-zealand_culture__first .next:hover {
   opacity: 0.3;
 }
 @media (max-width: 639px) and (min-width: 320px) {
   .countries__content__blocks__item__russia,
   .countries__content__blocks__item__norway,
+  .countries__content__blocks__item__norway_culture,
   .countries__content__blocks__item__china,
   .countries__content__blocks__item__india,
   .countries__content__blocks__item__japan,
-  .countries__content__blocks__item__new-zealand {
+  .countries__content__blocks__item__new-zealand,
+  .countries__content__blocks__item__new-zealand_culture {
     margin-left: 0;
     margin-top: 20px;
   }
 }
 .countries__content__blocks__item__norway {
+  display: none;
   margin-top: 20px;
 }
 .countries__content__blocks__item__norway__one {
-  background: url("../images/norway.jpg") no-repeat center center;
   background-size: cover;
+}
+.countries__content__blocks__item__norway_culture {
+  margin-top: 20px;
+}
+.countries__content__blocks__item__norway_culture__one {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 240px;
+  height: 160px;
+}
+.countries__content__blocks__item__norway_culture__one__overlay {
+  top: 20px;
+  left: 30px;
+  width: 240px;
+  height: 160px;
+  background: rgba(191,194,198,0.82);
+}
+.countries__content__blocks__item__norway_culture__one__overlay h1 {
+  margin-top: 69px;
 }
 .countries__content__blocks__item__china {
   margin-top: 20px;
@@ -524,11 +647,31 @@ table {
   background-size: cover;
 }
 .countries__content__blocks__item__new-zealand {
+  display: none;
   margin-top: 20px;
 }
 .countries__content__blocks__item__new-zealand__one {
   background: url("../images/new-zealand.jpg") no-repeat center center;
   background-size: cover;
+}
+.countries__content__blocks__item__new-zealand_culture {
+  margin-top: 20px;
+}
+.countries__content__blocks__item__new-zealand_culture__one {
+  margin-top: 20px;
+  margin-left: 30px;
+  width: 240px;
+  height: 160px;
+}
+.countries__content__blocks__item__new-zealand_culture__one__overlay {
+  top: 20px;
+  left: 30px;
+  width: 240px;
+  height: 160px;
+  background: rgba(191,194,198,0.82);
+}
+.countries__content__blocks__item__new-zealand_culture__one__overlay h1 {
+  margin-top: 69px;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .countries__content__blocks__item__russia {
@@ -557,7 +700,7 @@ table {
   width: 87.5%;
   margin: 60px auto 80px;
 }
-@media (min-width: 1260px) {
+@media (min-width: 1280px) {
   .countries__content {
     width: 1260px;
   }
@@ -570,7 +713,7 @@ table {
 }
 @media (max-width: 320px) {
   .countries__content__filter {
-    text-align: center;
+    text-align: left;
   }
 }
 .countries__content__filter li {
@@ -579,6 +722,7 @@ table {
   font: 12px/16px 'PTSansBold', sans-serif;
   letter-spacing: 0.05em;
   color: #9fa2a8;
+  cursor: pointer;
 }
 .countries__content__filter li:after {
   content: '';
@@ -591,6 +735,7 @@ table {
   .countries__content__filter li {
     display: inline-block;
     float: none;
+    margin-top: 10px;
   }
 }
 .countries__content__filter li.activ {
@@ -618,11 +763,10 @@ table {
 .countries__content__filter li + li {
   margin-left: 25px;
 }
-.f {
-  display: none !important;
-}
-.ak {
-  display: block !important;
+@media (max-width: 320px) {
+  .countries__content__filter li + li:nth-child(4) {
+    margin-left: 0;
+  }
 }
 .countries__content__blocks {
   margin-top: 20px;
@@ -685,7 +829,7 @@ table {
   color: #abaeb3;
 }
 .countries__content__blocks__item__cuba__two__text h2 {
-  margin-top: 30.5px;
+  margin-top: 29px;
   font: 24px/17px 'PTSansRegular', sans-serif;
   color: #fff;
 }
@@ -753,7 +897,7 @@ table {
   right: 20px;
   z-index: 3;
 }
-.countries__content__blocks__item__cuba__first .left {
+.countries__content__blocks__item__cuba__first #prewbutton {
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -762,10 +906,10 @@ table {
   background: url("../images/prev_slide.svg") no-repeat;
   cursor: pointer;
 }
-.countries__content__blocks__item__cuba__first .left:hover {
+.countries__content__blocks__item__cuba__first #prewbutton:hover {
   opacity: 0.3;
 }
-.countries__content__blocks__item__cuba__first .right {
+.countries__content__blocks__item__cuba__first #nextbutton {
   display: inline-block;
   width: 21px;
   height: 21px;
@@ -773,7 +917,7 @@ table {
   background: url("../images/next_slide.svg") no-repeat;
   cursor: pointer;
 }
-.countries__content__blocks__item__cuba__first .right:hover {
+.countries__content__blocks__item__cuba__first #nextbutton:hover {
   opacity: 0.3;
 }
 @media (max-width: 639px) and (min-width: 320px) {
@@ -920,7 +1064,7 @@ table {
   margin: 0 auto;
   vertical-align: center;
 }
-@media (min-width: 1260px) {
+@media (min-width: 1280px) {
   .footer__content {
     width: 1260px;
   }
@@ -988,7 +1132,7 @@ table {
   margin: 0 auto;
   vertical-align: center;
 }
-@media (min-width: 1260px) {
+@media (min-width: 1280px) {
   .header__content {
     width: 1260px;
   }

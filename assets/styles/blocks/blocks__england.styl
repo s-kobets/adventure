@@ -1,9 +1,12 @@
 .countries__content__blocks
 	&__item__england, 
-	&__item__switzerland, 
-	&__item__australia, 
+	&__item__switzerland,
+	&__item__switzerland_culture, 
+	&__item__australia,
+	&__item__australia_culture, 
 	&__item__germany, 
-	&__item__finland
+	&__item__finland,
+	&__item__finland_culture
 		position relative
 		display inline-block
 		float left		
@@ -63,25 +66,81 @@
 				&:hover
 					opacity .3
 					
-	&__item__switzerland		
+	&__item__switzerland
+		display none		
 		&__one
 			background url('../images/switzerland.jpg') no-repeat center center
 			background-size cover
 			
-	&__item__australia		
+	&__item__switzerland_culture			
+		&__one
+			margin-top 20px
+			margin-left 30px
+			width 240px
+			height 160px
+			
+			&__overlay
+				top 20px
+				left 30px
+				width 240px
+				height 160px
+				background rgba(191,194,198,.82)
+				
+				& h1
+					margin-top 69px	
+							
+	&__item__australia	
+		display none
+			
 		&__one
 			background url('../images/australia.jpg') no-repeat center center
 			background-size cover
 			
+	&__item__australia_culture			
+		&__one
+			margin-top 20px
+			margin-left 30px
+			width 240px
+			height 160px
+			
+			&__overlay
+				top 20px
+				left 30px
+				width 240px
+				height 160px
+				background rgba(191,194,198,.82)
+				
+				& h1
+					margin-top 69px	
+							
 	&__item__germany		
 			&__one
 				background url('../images/germany.jpg') no-repeat center center
 				background-size cover
 				
-		&__item__finland		
-			&__one
-				background url('../images/finland.jpg') no-repeat center center
-				background-size cover
+	&__item__finland
+		display none
+				
+		&__one
+			background url('../images/finland.jpg') no-repeat center center
+			background-size cover
+			
+	&__item__finland_culture			
+		&__one
+			margin-top 20px
+			margin-left 30px
+			width 240px
+			height 160px
+			
+			&__overlay
+				top 20px
+				left 30px
+				width 240px
+				height 160px
+				background rgba(191,194,198,.82)
+				
+				& h1
+					margin-top 69px	
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), 
 only screen and (min-moz-device-pixel-ratio: 2), 

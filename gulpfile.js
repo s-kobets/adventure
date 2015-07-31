@@ -46,12 +46,12 @@ gulp.task('cssMin', function() {
 });
 
 gulp.task('uglify', function() {
- gulp.src(['./assets/scripts/jquery-2.1.3.js', './assets/scripts/jquery.lazyload.js', './assets/**/*.js'])			 
+ gulp.src(['./assets/scripts/jquery-2.1.3.js', './assets/scripts/jquery.lazyload.js', './assets/scripts/*.js'])			 
 	.pipe(plumber())
 	.pipe(concat('all.min.js'))
-    //.pipe(uglify({
-	//	compress:true
-	//}))
+    .pipe(uglify({
+		compress:true
+	}))
     .pipe(gulp.dest('./public/js/'))
 	.pipe(notify("Done uglify!"));
 });
