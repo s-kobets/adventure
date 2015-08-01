@@ -600,13 +600,14 @@ table {
   }
 }
 .countries__content__blocks__item__norway {
-  display: none;
   margin-top: 20px;
 }
 .countries__content__blocks__item__norway__one {
+  background: url("../images/norway.jpg") no-repeat center center;
   background-size: cover;
 }
 .countries__content__blocks__item__norway_culture {
+  display: none;
   margin-top: 20px;
 }
 .countries__content__blocks__item__norway_culture__one {
