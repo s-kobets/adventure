@@ -14,11 +14,12 @@
             <h1>adventure</h1>
             <h3>оставь свой след, где его еще нет...</h3>
           </div>
-        </div>
+        </div><a id="open_tooltip" href="#" class="header__content__button">Открыть Подсказки													</a>
       </div>
     </div>
     <div class="countries">
       <div class="countries__content">
+        <div class="countries__content__tooltip-filter tooltip">Работает по клику <span>фильтр </span>по странам</div>
         <ul class="countries__content__filter clearfix">
           <li class="all activ">все страны</li>
           <li class="culture">культура</li>
@@ -27,34 +28,38 @@
           <li class="people">люди</li>
         </ul>
         <div class="countries__content__blocks clearfix">
+          <div class="countries__content__tooltip-content tooltip">Реализована <span>отложенная </span>загрузка фото и отображение
+            их на <span>Retina </span>экране. Контент <span>адаптивен </span>от 320px до бесконечности  													
+          </div>
           <div class="countries__content__blocks__item clearfix">
-            <div class="countries__content__blocks__item__cuba culture">
-              <div id="slider">
-                <div data-original="images/cuba.jpg" class="countries__content__blocks__item__cuba__one slide lazy">
-                  <div class="countries__content__blocks__item__cuba__one__overlay">
-                    <h1>Cuba</h1>
-                  </div>
+            <div id="cuba" class="countries__content__blocks__item__cuba culture">
+              <div class="countries__content__tooltip tooltip">Блок выполнен как <span>слайдер </span>, в котором предусмотрена возможность <span>увеличения изображения  </span>и <span>просмотра видео  </span>с youtube в выпадающем окне
+                <div id="slider"></div>
+              </div>
+              <div data-original="images/cuba.jpg" class="countries__content__blocks__item__cuba__one slide lazy">
+                <div class="countries__content__blocks__item__cuba__one__overlay">
+                  <h1>Cuba</h1>
                 </div>
-                <div class="countries__content__blocks__item__cuba__two slide">
-                  <div class="countries__content__blocks__item__cuba__two__text">
-                    <h3>
-                      Хэмингуэй, став весьма знаменитым, 
-                      естественно, мог выбрать любое место 
-                      в мире. Почему же он  22 года прожил 
-                      в Гаване? Потому что это свобода!
-                    </h3>
-                    <h2>Cuba</h2>
-                  </div>
+              </div>
+              <div class="countries__content__blocks__item__cuba__two slide">
+                <div class="countries__content__blocks__item__cuba__two__text">
+                  <h3>
+                    Хэмингуэй, став весьма знаменитым, 
+                    естественно, мог выбрать любое место 
+                    в мире. Почему же он  22 года прожил 
+                    в Гаване? Потому что это свобода!
+                  </h3>
+                  <h2>Cuba</h2>
                 </div>
-                <div data-original="images/cuba_three.jpg, images/icon_zoom.svg" class="countries__content__blocks__item__cuba__three slide lazy">
-                  <div id="popup_toggle" class="countries__content__blocks__item__cuba__three__overlay">
-                    <h2>Cuba</h2>
-                  </div>
+              </div>
+              <div data-original="images/cuba_three.jpg, images/icon_zoom.svg" class="countries__content__blocks__item__cuba__three slide lazy">
+                <div id="popup_toggle" class="countries__content__blocks__item__cuba__three__overlay">
+                  <h2>Cuba</h2>
                 </div>
-                <div data-original="images/cuba_four.jpg, images/icon_play.svg" class="countries__content__blocks__item__cuba__four slide lazy">
-                  <div id="video_toggle" class="countries__content__blocks__item__cuba__four__overlay">
-                    <h2>Cuba</h2>
-                  </div>
+              </div>
+              <div data-original="images/cuba_four.jpg, images/icon_play.svg" class="countries__content__blocks__item__cuba__four slide lazy">
+                <div id="video_toggle" class="countries__content__blocks__item__cuba__four__overlay">
+                  <h2>Cuba</h2>
                 </div>
               </div>
               <div class="countries__content__blocks__item__cuba__first clearfix">
@@ -309,7 +314,7 @@
     <!--Модальное окно video-->
     <div class="video_overlay">
       <div class="popup">
-        <iframe width="740" height="480" src="https://www.youtube.com/embed/iP8D-InacB8" frameborder="0" allowfullscreen></iframe><a href="#" class="popup_close"></a>
+        <div id="player"></div><a href="#" id="stop-button" class="popup_close"></a>
       </div>
     </div>
     <div class="footer">

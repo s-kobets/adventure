@@ -3,8 +3,8 @@
 	height 80px
 	background #282a2d
 	
-	&:hover
-		background #22539d
+	/*&:hover
+		background #22539d*/
 	
 	&__content
 		width 87.5%	
@@ -17,6 +17,26 @@
 			
 		@media (max-width: 320px)
 			width 300px	
+
+		&__button
+			position absolute
+			z-index 9999
+			display inline-block
+			top 30px
+			left 450px
+			color #fff
+			font-size 18px
+			cursor pointer
+			text-decoration none
+			
+			&:after
+				content ''
+				display block
+				height 2px 
+				margin-top 2px
+				background red
+			
+			
 		
 		&__wrapper__logo 
 			display inline-block
@@ -38,7 +58,7 @@
 				color #fff	
 			
 			& h3
-				margin-top 3.5px
+				margin-top 10px
 				font 11px/16px 'PTSansRegular', sans-serif
 				color #676b71
 				

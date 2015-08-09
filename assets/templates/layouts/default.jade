@@ -11,8 +11,8 @@ html(lang='ru')
 		//Модальное окно video
 		.video_overlay
 			.popup
-				iframe(width="740" height="480" src="https://www.youtube.com/embed/iP8D-InacB8" frameborder="0" allowfullscreen)
-				a(href="#" class="popup_close")
+				#player
+				a(href="#" id="stop-button" class="popup_close")
 		include ../blocks/footer
 		script(src='js/all.min.js')
 		

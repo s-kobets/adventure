@@ -203,6 +203,8 @@ table {
   width: 100%;
   height: 100%;
   background: url("../images/england.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__england__one__overlay,
@@ -269,6 +271,8 @@ table {
   width: 21px;
   height: 21px;
   opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: alpha(opacity=15);
   margin-right: 16px;
   background: url("../images/prev_slide.svg") no-repeat;
   cursor: pointer;
@@ -284,6 +288,8 @@ table {
 .countries__content__blocks__item__finland__first .prev:hover,
 .countries__content__blocks__item__finland_disable__first .prev:hover {
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
 }
 .countries__content__blocks__item__england__first .next,
 .countries__content__blocks__item__england_disable__first .next,
@@ -299,6 +305,8 @@ table {
   width: 21px;
   height: 21px;
   opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: alpha(opacity=15);
   background: url("../images/next_slide.svg") no-repeat;
   cursor: pointer;
 }
@@ -313,21 +321,31 @@ table {
 .countries__content__blocks__item__finland__first .next:hover,
 .countries__content__blocks__item__finland_disable__first .next:hover {
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
 }
 .countries__content__blocks__item__switzerland__one {
   background: url("../images/switzerland.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__australia__one {
   background: url("../images/australia.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__germany__one {
   background: url("../images/germany.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__finland__one {
   background: url("../images/finland.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__england_disable,
@@ -346,6 +364,9 @@ table {
   margin-left: 30px;
   width: 240px;
   height: 160px;
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }
 .countries__content__blocks__item__england_disable__one__overlay,
 .countries__content__blocks__item__switzerland_disable__one__overlay,
@@ -356,7 +377,6 @@ table {
   left: 30px;
   width: 240px;
   height: 160px;
-  background: rgba(191,194,198,0.92);
 }
 .countries__content__blocks__item__england_disable__one__overlay h1,
 .countries__content__blocks__item__switzerland_disable__one__overlay h1,
@@ -411,6 +431,8 @@ table {
   width: 100%;
   height: 100%;
   background: url("../images/latine_america.jpg") no-repeat center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item_right__latine__one__overlay,
@@ -431,6 +453,13 @@ table {
   font: 40px/17px 'NewBaskervilleC', sans-serif;
   color: #fff;
 }
+@media (max-width: 639px) and (min-width: 320px) {
+  .countries__content__blocks__item_right__latine__one__overlay h1,
+  .countries__content__blocks__item_right__latine_disable__one__overlay h1 {
+    margin-top: 40px;
+    line-height: 45px;
+  }
+}
 .countries__content__blocks__item_right__latine__one__overlay ul,
 .countries__content__blocks__item_right__latine_disable__one__overlay ul {
   margin-top: 54.5px;
@@ -445,7 +474,13 @@ table {
 .countries__content__blocks__item_right__latine_disable__one__overlay ul li + li {
   margin-top: 30px;
 }
-@media (max-width: 1239px) and (min-width: 320px) {
+@media (max-width: 639px) and (min-width: 320px) {
+  .countries__content__blocks__item_right__latine__one__overlay ul,
+  .countries__content__blocks__item_right__latine_disable__one__overlay ul {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1279px) and (min-width: 320px) {
   .countries__content__blocks__item_right__latine,
   .countries__content__blocks__item_right__latine_disable {
     margin-top: 18px;
@@ -458,7 +493,7 @@ table {
     margin-left: 0;
   }
 }
-@media (max-width: 1259px) and (min-width: 640px) {
+@media (max-width: 1279px) and (min-width: 640px) {
   .countries__content__blocks__item_right {
     float: none;
     margin-left: 0;
@@ -472,16 +507,32 @@ table {
   margin-left: 30px;
   width: 560px;
   height: 380px;
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }
 .countries__content__blocks__item_right__latine_disable__one__overlay {
   top: 20px;
   left: 30px;
   width: 560px;
   height: 380px;
-  background: rgba(191,194,198,0.92);
 }
 .countries__content__blocks__item_right__latine_disable__one__overlay h1 {
   margin-top: 71.5px;
+}
+@media (max-width: 639px) and (min-width: 320px) {
+  .countries__content__blocks__item_right__latine_disable__one__overlay {
+    width: 240px;
+    height: 380px;
+    float: none;
+  }
+}
+@media (max-width: 639px) and (min-width: 320px) {
+  .countries__content__blocks__item_right__latine_disable__one {
+    width: 240px;
+    height: 380px;
+    float: none;
+  }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .countries__content__blocks__item_right__one {
@@ -522,6 +573,8 @@ table {
   width: 100%;
   height: 100%;
   background: url("../images/russia.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__russia__one__overlay,
@@ -596,6 +649,8 @@ table {
   width: 21px;
   height: 21px;
   opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: alpha(opacity=15);
   margin-right: 16px;
   background: url("../images/prev_slide.svg") no-repeat;
   cursor: pointer;
@@ -613,6 +668,8 @@ table {
 .countries__content__blocks__item__new-zealand__first .prev:hover,
 .countries__content__blocks__item__new-zealand_disable__first .prev:hover {
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
 }
 .countries__content__blocks__item__russia__first .next,
 .countries__content__blocks__item__russia_disable__first .next,
@@ -630,6 +687,8 @@ table {
   width: 21px;
   height: 21px;
   opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: alpha(opacity=15);
   background: url("../images/next_slide.svg") no-repeat;
   cursor: pointer;
 }
@@ -646,6 +705,8 @@ table {
 .countries__content__blocks__item__new-zealand__first .next:hover,
 .countries__content__blocks__item__new-zealand_disable__first .next:hover {
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
 }
 @media (max-width: 639px) and (min-width: 320px) {
   .countries__content__blocks__item__russia,
@@ -669,6 +730,8 @@ table {
 }
 .countries__content__blocks__item__norway__one {
   background: url("../images/norway.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__china {
@@ -676,6 +739,8 @@ table {
 }
 .countries__content__blocks__item__china__one {
   background: url("../images/china.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__india {
@@ -683,6 +748,8 @@ table {
 }
 .countries__content__blocks__item__india__one {
   background: url("../images/india.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__japan {
@@ -690,6 +757,8 @@ table {
 }
 .countries__content__blocks__item__japan__one {
   background: url("../images/japan.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__new-zealand {
@@ -697,6 +766,8 @@ table {
 }
 .countries__content__blocks__item__new-zealand__one {
   background: url("../images/new-zealand.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__russia_disable,
@@ -718,6 +789,9 @@ table {
   margin-left: 30px;
   width: 240px;
   height: 160px;
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }
 .countries__content__blocks__item__russia_disable__one__overlay,
 .countries__content__blocks__item__norway_disable__one__overlay,
@@ -729,7 +803,6 @@ table {
   left: 30px;
   width: 240px;
   height: 160px;
-  background: rgba(191,194,198,0.92);
 }
 .countries__content__blocks__item__russia_disable__one__overlay h1,
 .countries__content__blocks__item__norway_disable__one__overlay h1,
@@ -766,6 +839,7 @@ table {
   background: #fff;
 }
 .countries__content {
+  position: relative;
   width: 87.5%;
   margin: 60px auto 80px;
 }
@@ -774,13 +848,13 @@ table {
     width: 1260px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 404px) {
   .countries__content {
     margin: 20px auto 0;
     width: 300px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 404px) {
   .countries__content__filter {
     text-align: left;
   }
@@ -800,7 +874,7 @@ table {
   height: 2px;
   background: transparent;
 }
-@media (max-width: 320px) {
+@media (max-width: 460px) {
   .countries__content__filter li {
     display: inline-block;
     float: none;
@@ -821,10 +895,77 @@ table {
 .countries__content__filter li + li {
   margin-left: 25px;
 }
-@media (max-width: 320px) {
+@media (max-width: 477px) and (min-width: 405px) {
+  .countries__content__filter li + li:nth-child(5) {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 404px) {
   .countries__content__filter li + li:nth-child(4) {
     margin-left: 0;
   }
+}
+@media (max-width: 477px) and (min-width: 405px) {
+  .countries__content {
+    width: 370px;
+  }
+}
+.countries__content__tooltip,
+.countries__content__tooltip-filter,
+.countries__content__tooltip-content {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 120px;
+  left: 0;
+  padding: 10px;
+  width: 250px;
+  background: #fff;
+  opacity: 0.85;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+  filter: alpha(opacity=85);
+  border: 2px solid #ccc;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #2424c2;
+  text-align: left;
+}
+.countries__content__tooltip span,
+.countries__content__tooltip-filter span,
+.countries__content__tooltip-content span {
+  color: #f00;
+}
+.countries__content__tooltip:before,
+.countries__content__tooltip-filter:before,
+.countries__content__tooltip-content:before {
+  content: '';
+  position: absolute;
+  top: -18px;
+  display: block;
+  border-bottom: 18px solid #ccc;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+}
+.countries__content__tooltip-filter {
+  width: 346px;
+  top: -58px;
+}
+.countries__content__tooltip-filter:before {
+  top: 38px;
+  border-top: 18px solid #ccc;
+  border-bottom: 0;
+}
+.countries__content__tooltip-content {
+  width: 500px;
+  top: -58px;
+  left: 450px;
+}
+.countries__content__tooltip-content:before {
+  top: 74px;
+  border-top: 18px solid #ccc;
+  border-bottom: 0;
 }
 .countries__content__blocks {
   margin-top: 20px;
@@ -853,6 +994,8 @@ table {
   width: 100%;
   height: 200px;
   background: url("../images/cuba.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__cuba__one__overlay,
@@ -885,17 +1028,19 @@ table {
 .countries__content__blocks__item__cuba__two__text,
 .countries__content__blocks__item__cuba_disable__two__text {
   padding-top: 40px;
-  padding-left: 17px;
+  padding-left: 20px;
 }
 .countries__content__blocks__item__cuba__two__text h3,
 .countries__content__blocks__item__cuba_disable__two__text h3 {
   width: 260px;
+  text-align: left;
   font: 14px/22px 'PTSansRegular', sans-serif;
   color: #abaeb3;
 }
 .countries__content__blocks__item__cuba__two__text h2,
 .countries__content__blocks__item__cuba_disable__two__text h2 {
-  margin-top: 29px;
+  margin-top: 36px;
+  text-align: left;
   font: 24px/17px 'PTSansRegular', sans-serif;
   color: #fff;
 }
@@ -907,6 +1052,8 @@ table {
   width: 100%;
   height: 100%;
   background: url("../images/cuba_three.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__cuba__three__overlay,
@@ -922,13 +1069,16 @@ table {
 .countries__content__blocks__item__cuba__three__overlay:hover,
 .countries__content__blocks__item__cuba_disable__three__overlay:hover {
   background: rgba(3,21,42,0.2) url("../images/icon_zoom.svg") no-repeat center center;
+  -webkit-background-size: 42px 42px;
+  -moz-background-size: 42px 42px;
   background-size: 42px 42px;
   cursor: pointer;
 }
 .countries__content__blocks__item__cuba__three__overlay h2,
 .countries__content__blocks__item__cuba_disable__three__overlay h2 {
-  margin-left: 17px;
-  margin-top: 156.5px;
+  margin-left: 20px;
+  margin-top: 164px;
+  text-align: left;
   font: 24px/17px 'PTSansRegular', sans-serif;
   color: #fff;
 }
@@ -940,6 +1090,8 @@ table {
   width: 100%;
   height: 100%;
   background: url("../images/cuba_four.jpg") no-repeat center 28%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
 }
 .countries__content__blocks__item__cuba__four__overlay,
@@ -955,13 +1107,16 @@ table {
 .countries__content__blocks__item__cuba__four__overlay:hover,
 .countries__content__blocks__item__cuba_disable__four__overlay:hover {
   background: rgba(7,26,42,0.2) url("../images/icon_play.svg") no-repeat center center;
+  -webkit-background-size: 42px 42px;
+  -moz-background-size: 42px 42px;
   background-size: 42px 42px;
   cursor: pointer;
 }
 .countries__content__blocks__item__cuba__four__overlay h2,
 .countries__content__blocks__item__cuba_disable__four__overlay h2 {
-  margin-left: 17px;
-  margin-top: 156.5px;
+  margin-left: 20px;
+  margin-top: 164px;
+  text-align: left;
   font: 24px/17px 'PTSansRegular', sans-serif;
   color: #fff;
 }
@@ -979,6 +1134,8 @@ table {
   width: 21px;
   height: 21px;
   opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: alpha(opacity=15);
   margin-right: 16px;
   background: url("../images/prev_slide.svg") no-repeat;
   cursor: pointer;
@@ -986,6 +1143,8 @@ table {
 .countries__content__blocks__item__cuba__first #prewbutton:hover,
 .countries__content__blocks__item__cuba_disable__first #prewbutton:hover {
   opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
 }
 .countries__content__blocks__item__cuba__first #nextbutton,
 .countries__content__blocks__item__cuba_disable__first #nextbutton {
@@ -993,18 +1152,16 @@ table {
   width: 21px;
   height: 21px;
   opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: alpha(opacity=15);
   background: url("../images/next_slide.svg") no-repeat;
   cursor: pointer;
 }
 .countries__content__blocks__item__cuba__first #nextbutton:hover,
 .countries__content__blocks__item__cuba_disable__first #nextbutton:hover {
   opacity: 0.3;
-}
-.countries__content__blocks__item__item__new-zealand,
-.countries__content__blocks__item margin-top 20px,
-.countries__content__blocks__item__one {
-  background: url("../images/new-zealand.jpg") no-repeat center center;
-  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
 }
 @media (max-width: 639px) and (min-width: 320px) {
   .countries__content__blocks__item {
@@ -1012,7 +1169,7 @@ table {
     float: none;
   }
 }
-@media (max-width: 1259px) and (min-width: 640px) {
+@media (max-width: 1279px) and (min-width: 640px) {
   .countries__content__blocks__item {
     float: none;
   }
@@ -1025,13 +1182,15 @@ table {
   margin-left: 30px;
   width: 240px;
   height: 160px;
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
 }
 .countries__content__blocks__item__cuba_disable__one__overlay {
   top: 20px;
   left: 30px;
   width: 240px;
   height: 160px;
-  background: rgba(191,194,198,0.92);
 }
 .countries__content__blocks__item__cuba_disable__one__overlay h1 {
   margin-top: 71.5px;
@@ -1066,6 +1225,8 @@ table {
   width: 640px;
   height: 480px;
   background: url("../images/cuba_three.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   vertical-align: middle;
   z-index: 11;
@@ -1084,10 +1245,14 @@ table {
   height: 30px;
   background: url("../images/icon_close.svg") no-repeat center center;
   opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
   z-index: 11;
 }
 .popup_overlay .popup a:hover {
   opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
 }
 @media (max-width: 710px) and (min-width: 510px) {
   .popup_overlay .popup {
@@ -1124,6 +1289,8 @@ table {
   display: inline-block;
   width: 740px;
   height: 480px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   vertical-align: middle;
   z-index: 11;
@@ -1142,10 +1309,14 @@ table {
   height: 30px;
   background: url("../images/icon_close.svg") no-repeat center center;
   opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
   z-index: 11;
 }
 .video_overlay .popup a:hover {
   opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .countries__content__blocks__item__cuba__one {
@@ -1227,9 +1398,8 @@ table {
   width: 100%;
   height: 80px;
   background: #282a2d;
-}
-.header:hover {
-  background: #22539d;
+/*&:hover
+		background #22539d*/
 }
 .header__content {
   width: 87.5%;
@@ -1246,6 +1416,24 @@ table {
   .header__content {
     width: 300px;
   }
+}
+.header__content__button {
+  position: absolute;
+  z-index: 9999;
+  display: inline-block;
+  top: 30px;
+  left: 450px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header__content__button:after {
+  content: '';
+  display: block;
+  height: 2px;
+  margin-top: 2px;
+  background: #f00;
 }
 .header__content__wrapper__logo {
   display: inline-block;
@@ -1267,7 +1455,7 @@ table {
   color: #fff;
 }
 .header__content__wrapper__text h3 {
-  margin-top: 3.5px;
+  margin-top: 10px;
   font: 11px/16px 'PTSansRegular', sans-serif;
   color: #676b71;
 }
